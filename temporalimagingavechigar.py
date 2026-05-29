@@ -287,14 +287,14 @@ def main():
         global mask
 
         "Video test"
-        video_images, FPS = video("pictures/pedestrain.mp4", 0, None)
+        video_images, FPS = video("pictures/timelapse.mp4", 0, None)
         video_images2, FPS2 = video("pictures/blueLakeSunset.mp4", 0, None)
 
 
         levels = 3
 
         options = [
-            "1. handheld",
+            "1. starry_night",
             "2. lake"
         ]
 
@@ -369,7 +369,7 @@ def main():
         plt.axis('off')
 
         if intro == 1:
-            fig.savefig(f"{output_dir}/temporal_imaging_pedestrian_fusion.png", bbox_inches="tight", pad_inches=0, dpi=400)
+            fig.savefig(f"{output_dir}/temporal_imaging_fusion.png", bbox_inches="tight", pad_inches=0, dpi=400)
         if intro == 2:
             fig.savefig(f"{output_dir}/temporal_imaging_lake_fusion.png", bbox_inches="tight", pad_inches=0, dpi=400)
         plt.show()
